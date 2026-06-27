@@ -7,7 +7,7 @@ A mixture of DPPC and DLPC lipids is known to form nanoscale vesicles that show 
 
 **Figure 1:** Shows the CREASE-GA optimization loop for the two-phase nanoscale lipid vesicles SANS data. The CREASE-GA optimization loop takes as an input the experimental SANS profile **[1]** and iterates until it finds candidate solutions whose computed scattering profiles closely match the input experimental profile. The CREASE optimization loop outputs distributions of such candidate solutions (each candidate solution is a set of structural feature values) and 3D representative structures of the two-phase lipid vesicles.
 
-The synthesis of dDPPC-DLPC nanoscale lipid vesicles and the collection of SANS data are detailed in the paper by Krzyzanowski et al. [1]. The trained XGBoost surrogate ML models and the experimental SANS data required to run the CREASE-GA optimization loop can be downloaded from Zenodo **[2]**. 
+The synthesis of dDPPC-DLPC nanoscale lipid vesicles and the collection of SANS data are detailed in the paper by Krzyzanowski et al. **[1]**. The trained XGBoost surrogate ML models and the experimental SANS data required to run the CREASE-GA optimization loop can be downloaded from Zenodo **[2]**. 
 
 A brief description of all the codes included in this repository is provided below.
 
