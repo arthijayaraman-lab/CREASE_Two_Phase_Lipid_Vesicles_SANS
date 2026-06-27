@@ -1,0 +1,36 @@
+axes.titlesize : 30
+axes.labelsize : 30
+axes.linewidth : 1.2
+
+lines.linewidth : 3
+lines.markersize : 8
+
+font.size: 30
+text.usetex: True
+font.family: sans-serif
+font.serif: Helvetica
+
+xtick.labelsize : 18
+xtick.direction : in
+xtick.major.size : 6
+xtick.minor.size : 3
+xtick.top : True
+xtick.bottom : True
+
+ytick.labelsize : 18
+ytick.direction : in
+ytick.major.size : 6
+ytick.minor.size : 3
+ytick.left : True
+ytick.right : True
+
+legend.loc: upper right
+legend.frameon: True
+legend.fancybox: True
+legend.framealpha: 1
+legend.facecolor: white
+legend.fontsize: 16
+
+savefig.dpi: 1200
+savefig.bbox: tight
+savefig.transparent: False
