@@ -5,7 +5,9 @@ A mixture of DPPC and DLPC lipids is known to form nanoscale vesicles that show 
 
 ![Alt text](docs/GitHub_Figure.png)
 
-**Figure 1:** Shows the CREASE-GA optimization loop for the two-phase nanoscale lipid vesicles SANS data. The CREASE-GA optimization loop takes as an input the experimental SANS profile and iterates until it finds candidate solutions whose computed scattering profiles closely match the input experimental profile. The CREASE optimization loop outputs distributions of such candidate solutions (each candidate solution is a set of structural feature values) and 3D representative structures of the two-phase lipid vesicles.
+**Figure 1:** Shows the CREASE-GA optimization loop for the two-phase nanoscale lipid vesicles SANS data. The CREASE-GA optimization loop takes as an input the experimental SANS profile [1] and iterates until it finds candidate solutions whose computed scattering profiles closely match the input experimental profile. The CREASE optimization loop outputs distributions of such candidate solutions (each candidate solution is a set of structural feature values) and 3D representative structures of the two-phase lipid vesicles.
+
+The synthesis of dDPPC-DLPC nanoscale lipid vesicles and the collection of SANS data are detailed in the paper by Krzyzanowski et al. [1]. The trained XGBoost surrogate ML models and the experimental SANS data required to run the CREASE-GA optimization loop can be downloaded from Zenodo [2] [Zenodo for CREASE dDPPC-DLPC nanoscale lipid vesicles uploads](https://doi.org/10.5281/zenodo.20973673). 
 
 A brief description of all the codes included in this repository is provided below.
 
@@ -42,3 +44,17 @@ The Five Steps of the CREASE-GA Loop
 **Step_5_CREASE_GA/inputscript_CREASE_GA.py** This Python script is an input script for running the CREASE-GA optimization loop. The user can specify the range for each structural feature, the number of generations of CREASE optimization for each trial, and the number of independent CREASE-GA trials. The user can also specify the input file containing the experimental SANS data and the desired xgboost surrogate ML model to be used within the CREASE-GA optimization loop. To run the CREASE-GA optimization loop set the desried values for the parameters, the desired input files, and the desired names of output files and run using the command 'python3 inputscript_CREASE_GA.py' or 'python3 inputscript_CREASE_GA.py'. The experimental profiles are expected to have 4 columns of data with commented out additional text if any. The 4 columns correspond to the q values, scattering intensities [I(q)], the errors in I(q), and the resolution of q values, respectively.
 
 **Step_5_CREASE_GA/multiple_runs_res_smear_CREASE_engine.py** This Python script accepts an experimental scattering profile as input and iterates over generations of candidate solutions until the fitness of the candidate solutions within a generation are converged. The python script runs for a user-specified number of generations with the user-specified number of candidate solutions (individuals) each, and performs a user-specified number of independent trials of CREASE-GA optimization. This script also performs the resolution smearing of computed scattering intensities with a user-specified number of smearing points. This script outputs the structural features and fitness of individuals corresponding to the last GA generation of every independent CREASE-GA trial. This script also outputs the predicted I(q) for the best performing CREASE-GA candidate across all the independent trials and the standard deviation in predicted I(q) between the best performing candidate solution of every independent trial.
+
+The XGBoost surrgoate ML models and experimental SANS data that are required inputs to run the CREASE-GA optimization loop can be downloaded from Zenodo [2].
+
+----------------------------------------------------------
+
+**References**
+
+1. Published work detailing the synthesis and SANS data collection of dDPPC-DLPC nanoscale lipid vesicles.
+
+Krzyzanowski, Natalie, Lionel Porcar, and Ursula Perez-Salas. "A small-angle neutron Scattering, calorimetry and densitometry study to detect phase boundaries and nanoscale domain structure in a binary lipid mixture." Membranes 13.3 (2023): 323. [link to article](https://doi.org/10.3390/membranes13030323)
+
+2. The link for downloading the trained XGBoost ML models and the SANS data.
+
+[Zenodo link for CREASE dDPPC-DLPC nanoscale lipid vesicles uploads](https://doi.org/10.5281/zenodo.20973673)
