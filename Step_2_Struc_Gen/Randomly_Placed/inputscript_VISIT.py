@@ -3,11 +3,10 @@
 # Code created by Rohan S. Adhikari, Postdoctoral Researcher, Jayaraman Lab, University of Delaware, Newark, DE
 # Code created around December 2025
 # This code is an input script to the VISIT (vesicles with irregularly shaped isolated-domains in two-phases) algorithm. 
-# The phase represented using a random walk can be partitioned into user specified number of isolated domains.
-# The user also specifies the phase fraction for the phase that they wish to represent using random walk.
+# VISIT partitions one of the phases into user specified number of isolated domains.
 # The isolated phase domains are a collection of phase grids corresponding to one phase ...
-# ... that are surrounded by the other phase in every grid.
-# This code places the isolated domains at random locations on the two phase grid.
+# ... that are surrounded by the other phase in every direction.
+# VISIT places the isolated domains at random locations on the two phase grid.
 # The code iterates until it finds the configuration required by the user. There is a theoretical maximum number of ...
 # ... isolated domains that can be obtained which is a function of the phase volume fraction and ...
 # ... the total number of discretized grids. 
