@@ -16,7 +16,7 @@ import matplotlib.pyplot as plt
 from matplotlib.colors import ListedColormap, Normalize
 import time
 
-def constr_rand_walk_sph_grids(params, file_names):
+def VISIT(params, file_names):
 
     plt.style.use("paper.mplstyle")
 
