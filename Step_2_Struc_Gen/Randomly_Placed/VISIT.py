@@ -1,10 +1,10 @@
 ################################################################################################################
 
-# Module for performing constrained random walks in spherical grids. Created by Rohan S. Adhikari, 
+# Module for implementing the VISIT algorithm. Created by Rohan S. Adhikari, 
 # Postdoctoral Researcher, Jayaraman Lab, University of Delaware, Newark, DE, December 2025.
-# Do not run this module by itself. Module is called within inputscript_crwsg.py.
-# Set the required values for parameters and file names in inputscript_crwsg.py and run using ...
-# ... python/python3 inputscript_crwsg.py.  
+# Do not run this module by itself. Module is called within inputscript_VISIT.py.
+# Set the required values for parameters and file names in inputscript_VISIT.py and run using ...
+# ... python/python3 inputscript_VISIT.py.  
 
 ################################################################################################################
 
