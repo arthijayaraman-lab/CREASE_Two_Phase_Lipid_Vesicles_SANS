@@ -13,11 +13,8 @@
 # If you choose a high volume fraction and high number of isolated domains the code might keep iterating indefinitely. 
 # Always start with lower number of domains and increase gradually while being mindful of your available resources 
 
-# To run this code, specify the required parameters and files names and run using python inputscript_crwsg.py / ...
-# ... python3 inputscript_crwsg.py.
-# This code uses the constr_rand_walk_sph_grids.py file to perform the user specified constrained random walk ...
-# ... in spherical grids. But do not run using python constr_rand_walk_sph_grids.py, since that is just a module being ...
-# ... referenced here.
+# To run this code, specify the required parameters and files names and run using python inputscript_VISIT.py / ...
+# ... python3 inputscript_VISIT.py.
 # This code uses paper.mplstyle file to set the fonts and plot style for the flattened vesicle representation.
 # This code used the following Python modules, numpy, random, scipy, matplotlib.pyplot, and time.
 # Make sure you have installed the necessary modules before running this script.
