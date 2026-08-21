@@ -2,7 +2,7 @@
 
 # Code created by Rohan S. Adhikari, Postdoctoral Researcher, Jayaraman Lab, University of Delaware, Newark, DE
 # Code created around December 2025
-# This code performs a constrained random walk on spherical 2D grids to represent one of the phases in a two phase system. 
+# This code is an input script to the VISIT (vesicles with irregularly shaped isolated-domains in two-phases) algorithm. 
 # The phase represented using a random walk can be partitioned into user specified number of isolated domains.
 # The user also specifies the phase fraction for the phase that they wish to represent using random walk.
 # The isolated phase domains are a collection of phase grids corresponding to one phase ...
