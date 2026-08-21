@@ -29,7 +29,7 @@
 # Load the necessary modules.
 
 import numpy as np
-from constr_rand_walk_sph_grids import constr_rand_walk_sph_grids
+from VISIT import VISIT
 
 # The necessary parameters for constraining the random walk
 # Only change the values on the right side of the colon, not the variable names to the left which are used within the 
@@ -71,4 +71,4 @@ file_names = {
 
 }
 
-constr_rand_walk_sph_grids(params, file_names)
+VISIT(params, file_names)
